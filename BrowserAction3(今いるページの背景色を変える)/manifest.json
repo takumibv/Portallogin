@@ -1,0 +1,23 @@
+//Browser Action 3
+
+{
+		"name": "My third Extension",
+		"version": "0.1",
+		"manifest_version": 2,
+
+		"description": "今いるページの背景色を変えるよ！2",
+
+		"permissions":[
+			"tabs","http://*/*"
+		],
+
+		"background": {
+			"scripts":["background.js"]
+		},
+
+		"browser_action":{
+			"default_icon":"ex2.png",
+			"default_title":"My first Extention"
+		}
+
+}

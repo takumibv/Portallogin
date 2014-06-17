@@ -1,0 +1,23 @@
+//Portal Login
+
+{
+		"name": "Portal Login Extension",
+		"version": "0.1",
+		"manifest_version": 2,
+
+		"description": "Portalに自動ログイン",
+
+		"background":{
+		 	"scripts":["background.js"]
+		 },
+
+		"permissions":[
+			"tabs","http://*/*"
+		],
+
+		"page_action":{
+			"default_icon":"ex3.png",
+			"default_title":"Portal Login Extention"
+			//"default_popup":"popup.html"
+		}
+}
