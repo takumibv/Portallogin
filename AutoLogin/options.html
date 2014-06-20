@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang ="ja">
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body style="min-width:1500px">
+
+
+		<script type="text/javascript">
+			<!--
+			var pass=[7];
+			for(i=0;i<7;i++){
+				pass[i]=[]
+				for(j=0;j<10;j++){
+					pass[i][j] = 0;
+				}
+			}
+			function savea(){
+				
+				var i,j;
+
+				// for(i=0;i<70;i++){
+				// 	document.getElementsByTagName("input")[i].value="a";
+				// }
+
+			for(i=0;i<7;i++){
+				pass[i]=[];
+				for(j=0;j<10;j++){
+					pass[i][j] = document.getElementsByTagName("input")[i*10+j].value;
+					console.log(document.getElementsByTagName("input")[i*10+j].value);
+				}
+			}
+
+			for(i=0;i<7;i++){
+				for(j=0;j<10;j++){
+					console.log(pass[i][j]);
+				}
+			}
+
+				//console.log(pass[1],pass[2],pass[3]);
+			}
+			//-->
+		</script>
+		
+		<h3>Input your sirial numbers.</h3>
+
+	<form name="sirial">
+		<table border="1">
+			<tr>
+				<td>A1</td><td><input type="password" name="A1" size="1" maxlength="4"></td>
+				<td>B1</td><td><input type="password" name="B1" size="1" maxlength="1"></td>
+				<td>C1</td><td><input type="password" name="C1" size="1" maxlength="1"></td>
+				<td>D1</td><td><input type="password" name="D1" size="1" maxlength="1"></td>
+				<td>E1</td><td><input type="password" name="E1" size="1" maxlength="1"></td>
+				<td>F1</td><td><input type="password" name="F1" size="1" maxlength="1"></td>
+				<td>G1</td><td><input type="password" name="G1" size="1" maxlength="1"></td>
+				<td>H1</td><td><input type="password" name="H1" size="1" maxlength="1"></td>
+				<td>I1</td><td><input type="password" name="I1" size="1" maxlength="1"></td>
+				<td>J1</td><td><input type="password" name="J1" size="1" maxlength="1"></td>
+			</tr>
+			<tr>
+				<td>A2</td><td><input type="password" name="A2" size="1" maxlength="1"></td>
+				<td>B2</td><td><input type="password" name="B2" size="1" maxlength="1"></td>
+				<td>C2</td><td><input type="password" name="C2" size="1" maxlength="1"></td>
+				<td>D2</td><td><input type="password" name="D2" size="1" maxlength="1"></td>
+				<td>E2</td><td><input type="password" name="E2" size="1" maxlength="1"></td>
+				<td>F2</td><td><input type="password" name="F2" size="1" maxlength="1"></td>
+				<td>G2</td><td><input type="password" name="G2" size="1" maxlength="1"></td>
+				<td>H2</td><td><input type="password" name="H2" size="1" maxlength="1"></td>
+				<td>I2</td><td><input type="password" name="I2" size="1" maxlength="1"></td>
+				<td>J2</td><td><input type="password" name="J2" size="1" maxlength="1"></td>
+			</tr>
+			<tr>
+				<td>A3</td><td><input type="password" name="A3" size="1" maxlength="1"></td>
+				<td>B3</td><td><input type="password" name="B3" size="1" maxlength="1"></td>
+				<td>C3</td><td><input type="password" name="C3" size="1" maxlength="1"></td>
+				<td>D3</td><td><input type="password" name="D3" size="1" maxlength="1"></td>
+				<td>E3</td><td><input type="password" name="E3" size="1" maxlength="1"></td>
+				<td>F3</td><td><input type="password" name="F3" size="1" maxlength="1"></td>
+				<td>G3</td><td><input type="password" name="G3" size="1" maxlength="1"></td>
+				<td>H3</td><td><input type="password" name="H3" size="1" maxlength="1"></td>
+				<td>I3</td><td><input type="password" name="I3" size="1" maxlength="1"></td>
+				<td>J3</td><td><input type="password" name="J3" size="1" maxlength="1"></td>
+			</tr>
+			<tr>
+				<td>A4</td><td><input type="password" name="A4" size="1" maxlength="1"></td>
+				<td>B4</td><td><input type="password" name="B4" size="1" maxlength="1"></td>
+				<td>C4</td><td><input type="password" name="C4" size="1" maxlength="1"></td>
+				<td>D4</td><td><input type="password" name="D4" size="1" maxlength="1"></td>
+				<td>E4</td><td><input type="password" name="E4" size="1" maxlength="1"></td>
+				<td>F4</td><td><input type="password" name="F4" size="1" maxlength="1"></td>
+				<td>G4</td><td><input type="password" name="G4" size="1" maxlength="1"></td>
+				<td>H4</td><td><input type="password" name="H4" size="1" maxlength="1"></td>
+				<td>I4</td><td><input type="password" name="I4" size="1" maxlength="1"></td>
+				<td>J4</td><td><input type="password" name="J4" size="1" maxlength="1"></td>
+			</tr>
+			<tr>
+				<td>A5</td><td><input type="password" name="A5" size="1" maxlength="1"></td>
+				<td>B5</td><td><input type="password" name="B5" size="1" maxlength="1"></td>
+				<td>C5</td><td><input type="password" name="C5" size="1" maxlength="1"></td>
+				<td>D5</td><td><input type="password" name="D5" size="1" maxlength="1"></td>
+				<td>E5</td><td><input type="password" name="E5" size="1" maxlength="1"></td>
+				<td>F5</td><td><input type="password" name="F5" size="1" maxlength="1"></td>
+				<td>G5</td><td><input type="password" name="G5" size="1" maxlength="1"></td>
+				<td>H5</td><td><input type="password" name="H5" size="1" maxlength="1"></td>
+				<td>I5</td><td><input type="password" name="I5" size="1" maxlength="1"></td>
+				<td>J5</td><td><input type="password" name="J5" size="1" maxlength="1"></td>
+			</tr>
+			<tr>
+				<td>A6</td><td><input type="password" name="A6" size="1" maxlength="1"></td>
+				<td>B6</td><td><input type="password" name="B6" size="1" maxlength="1"></td>
+				<td>C6</td><td><input type="password" name="C6" size="1" maxlength="1"></td>
+				<td>D6</td><td><input type="password" name="D6" size="1" maxlength="1"></td>
+				<td>E6</td><td><input type="password" name="E6" size="1" maxlength="1"></td>
+				<td>F6</td><td><input type="password" name="F6" size="1" maxlength="1"></td>
+				<td>G6</td><td><input type="password" name="G6" size="1" maxlength="1"></td>
+				<td>H6</td><td><input type="password" name="H6" size="1" maxlength="1"></td>
+				<td>I6</td><td><input type="password" name="I6" size="1" maxlength="1"></td>
+				<td>J6</td><td><input type="password" name="J6" size="1" maxlength="1"></td>
+			</tr>
+			<tr>
+				<td>A7</td><td><input type="password" name="A7" size="1" maxlength="1"></td>
+				<td>B7</td><td><input type="password" name="B7" size="1" maxlength="1"></td>
+				<td>C7</td><td><input type="password" name="C7" size="1" maxlength="1"></td>
+				<td>D7</td><td><input type="password" name="D7" size="1" maxlength="1"></td>
+				<td>E7</td><td><input type="password" name="E7" size="1" maxlength="1"></td>
+				<td>F7</td><td><input type="password" name="F7" size="1" maxlength="1"></td>
+				<td>G7</td><td><input type="password" name="G7" size="1" maxlength="1"></td>
+				<td>H7</td><td><input type="password" name="H7" size="1" maxlength="1"></td>
+				<td>I7</td><td><input type="password" name="I7" size="1" maxlength="1"></td>
+				<td>J7</td><td><input type="password" name="J7" size="1" maxlength="1"></td>
+			</tr>
+		</table>
+	</form>
+
+	<script type="text/javascript">
+			var i;
+				for(i=0;i<70;i++){
+					document.getElementsByTagName("input")[i].value=i%10;
+				}
+	</script>
+
+		<input type="button" id="passsave" value="save" onClick="savea()">
+
+
+
+
+	</body>
+</html>

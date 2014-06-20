@@ -8,16 +8,33 @@
 		"description": "Portalに自動ログイン",
 
 		"background":{
-		 	"scripts":["background.js"]
-		 },
+			"scripts":["background.js"]
+		},
+		
+		"icons":{ "19":"ex3.png" },
+
+		// "content_scripts":[
+		// 	{
+		// 		"matches":["file:///C:*"],
+		// 		"js":["myscript.js"]
+		// 	}
+
+		// ],
 
 		"permissions":[
-			"tabs","http://*/*"
+			"tabs",
+			"http://*/*",
+			"https://*/*",
+			"file:///C:*"
 		],
 
-		"page_action":{
-			"default_icon":"ex3.png",
+		// // "background_page":"popup.html",
+
+		"options_page":"options.html",
+
+		 "page_action":{
+		 	"default_icon":"ex3.png",
 			"default_title":"Portal Login Extention"
-			//"default_popup":"popup.html"
+		// 	//"default_popup":"popup.html"
 		}
 }
