@@ -7,6 +7,8 @@
 
 		"description": "Portalに自動ログイン",
 
+		"options_page":"options.html",
+
 		"background":{
 			"scripts":["background.js"]
 		},
@@ -29,8 +31,6 @@
 		],
 
 		// // "background_page":"popup.html",
-
-		"options_page":"options.html",
 
 		 "page_action":{
 		 	"default_icon":"ex3.png",

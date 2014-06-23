@@ -7,22 +7,17 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab){
 	});
 
 chrome.pageAction.onClicked.addListener(function(tab) {
+	// var password[7],i,j;
+	// for(i=0;i<7;i++){
+	// 	password[i]=[];
+	// 	for(j=0;j<10;j++){
+	// 		password[i][j] = pass[i][j];
+	// 	}
+	// }
+
 	chrome.tabs.executeScript(null,
 		{file: "myscript.js"});
 });
-
-// chrome.tabs.onUpdated.addListener(function(tabId,changeInfo,tab){
-// 	if(tab.url.indexOf('dotinstall') != -1){
-// 		chrome.PageAction.show(tabId);
-// 	}
-// 	});
-//chrome.pageAction.show(integer tabId);
-// chrome.pageAction.onClicked.addListener(function(){
-// 	chrome.tabs.executeScript(null, {
-// 		"code":"change()"
-// 	})
-// });
-
 
 
 // function change(){
