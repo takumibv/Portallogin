@@ -7,16 +7,16 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab){
 	});
 
 chrome.pageAction.onClicked.addListener(function(tab) {
-	// var password[7],i,j;
-	// for(i=0;i<7;i++){
-	// 	password[i]=[];
-	// 	for(j=0;j<10;j++){
-	// 		password[i][j] = pass[i][j];
-	// 	}
-	// }
 
+	var pass = JSON.parse(localStorage.getItem('password'));
 	chrome.tabs.executeScript(null,
-		{file: "myscript.js"});
+		{ code: "var pass = "+pass},
+	function(){
+		chrome.tabs.executeScript(null, { file: "myscript.js"});
+	}
+	);
+
+		//{file: "myscript.js"});
 });
 
 

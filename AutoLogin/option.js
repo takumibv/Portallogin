@@ -1,9 +1,11 @@
 			var i;
+			
 				for(i=0;i<70;i++){
-					document.getElementsByTagName("input")[i].value=i%10;
+					document.getElementsByTagName("input")[i].value=String.fromCharCode(i+57);
 				}
 
 			var pass=[7];
+			
 			for(i=0;i<7;i++){
 				pass[i]=[]
 				for(j=0;j<10;j++){
@@ -12,25 +14,25 @@
 			}
 			document.getElementById("passsave").onclick = function(){
 				
-				var i,j;
+				var i,j,k=0;
 
-				// for(i=0;i<70;i++){
-				// 	document.getElementsByTagName("input")[i].value="a";
+				for(i=0;i<7;i++){
+					pass[i]=[];
+					for(j=0;j<10;j++){
+						pass[i][j] = document.getElementsByTagName("input")[i*10+j].value;
+						//console.log(document.getElementsByTagName("input")[i*10+j].value);
+					}
+				}
+
+				localStorage.setItem('password',JSON.stringify(JSON.stringify(pass)));
+
+				// for(i=0;i<7;i++){
+				// 	for(j=0;j<10;j++){
+				// 		console.log(pass[i][j]);
+				// 	}
 				// }
 
-			for(i=0;i<7;i++){
-				pass[i]=[];
-				for(j=0;j<10;j++){
-					pass[i][j] = document.getElementsByTagName("input")[i*10+j].value;
-					//console.log(document.getElementsByTagName("input")[i*10+j].value);
-				}
+				//var options = JSON.parse(localStorage.getItem('password'));
+				//	console.log(options);
 			}
 
-			for(i=0;i<7;i++){
-				for(j=0;j<10;j++){
-					console.log(pass[i][j]);
-				}
-			}
-
-				//console.log(pass[1],pass[2],pass[3]);
-			}
