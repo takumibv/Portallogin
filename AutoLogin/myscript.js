@@ -1,16 +1,4 @@
 
-// chrome.extension.sendRequest({"action": "getName"}, function(response) {
-//                            var name = response;
-//                            if (name == '' || name == null) {
-//                                name = 'guest';
-//                            }
-//                            var hello = document.createElement('div');
-//                            hello.innerText = "Hello, " + name;
-//                            var d = document.getElementsByTagName('body')[0];
-//                            var dp = d.parentNode;
-//                            dp.insertBefore(hello, d);
-//                        });
-
 console.log(pass);
 
 var a = document.getElementsByTagName("th");
@@ -30,3 +18,7 @@ var a = document.getElementsByTagName("th");
   b[0].value = pass[(a[6].innerHTML.substr(3,1)-1)][(a[6].innerHTML.substr(1,1).charCodeAt(0)-65)];
   c[0].value = pass[(a[8].innerHTML.substr(3,1)-1)][(a[8].innerHTML.substr(1,1).charCodeAt(0)-65)];
   d[0].value = pass[(a[10].innerHTML.substr(3,1)-1)][(a[10].innerHTML.substr(1,1).charCodeAt(0)-65)];
+
+  console.log(pass[(a[6].innerHTML.substr(3,1)-1)][(a[6].innerHTML.substr(1,1).charCodeAt(0)-65)]);
+  console.log(pass[(a[8].innerHTML.substr(3,1)-1)][(a[8].innerHTML.substr(1,1).charCodeAt(0)-65)]);
+  console.log(pass[(a[10].innerHTML.substr(3,1)-1)][(a[10].innerHTML.substr(1,1).charCodeAt(0)-65)]);
