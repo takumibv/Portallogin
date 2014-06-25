@@ -13,7 +13,7 @@
 			"scripts":["background.js"]
 		},
 		
-		"icons":{ "19":"ex3.png" },
+		"icons":{ "48":"ex4.png" },
 
 		// "content_scripts":[
 		// 	{

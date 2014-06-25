@@ -68,9 +68,6 @@
 				// 		console.log(pass[i][j]);
 				// 	}
 				// }
-
-				// var options = JSON.parse(localStorage.getItem('password'));
-				// 	console.log(options);
 			}
 
 			document.getElementById("clear").onclick = function(){
