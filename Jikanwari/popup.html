@@ -17,52 +17,52 @@
 		}
 	</script>-->
 
-		<script>
-    // ブラウザアクションがクリックされた場合の処理
+  <p>Hello</p>
+
+ 		<script src="myscript2.js"></script>
+
+
+<!--    // ブラウザアクションがクリックされた場合の処理
     chrome.browserAction.onClicked.addListener(function(tab) {
-      var viewTabUrl = chrome.extension.getURL('image.html');
-      var imageUrl = /* an image's URL */;
+       var viewTabUrl = chrome.extension.getURL('image.html');
+       var imageUrl = /* an image's URL */;
+       // この拡張機能に属するビューを全て確認し、今回使うものを見つける
+       var views = chrome.extension.getViews();
+       for (var i = 0; i < views.length; i++) {
+         var view = views[i];
 
-      // この拡張機能に属するビューを全て確認し、今回使うものを見つける
-      var views = chrome.extension.getViews();
-      for (var i = 0; i < views.length; i++) {
-        var view = views[i];
+         // ビューが該当するURLを指し、未使用のものであれば...
+         if (view.location.href == viewTabUrl && !view.imageAlreadySet) {
 
-        // ビューが該当するURLを指し、未使用のものであれば...
-        if (view.location.href == viewTabUrl && !view.imageAlreadySet) {
+           // ...関数を呼び出し、使用済みに状態を変える
+           view.setImageUrl(imageUrl);
+           view.imageAlreadySet = true;
+           break; // 完了
+         }
+       }
+     });
+    -->
 
-          // ...関数を呼び出し、使用済みに状態を変える
-          view.setImageUrl(imageUrl);
-          view.imageAlreadySet = true;
-          break; // 完了
-        }
+  
+ <!-- chrome.extension.onRequest.addListener(
+    function(request, sender, sendResponse) {
+       switch(request.action) {
+         case 'getName':
+            sendResponse(getNameFromStorage());
+            break;
       }
-    });
-  </script>
+   }
+);
 
-  <script>
-// chrome.extension.onRequest.addListener(
-//    function(request, sender, sendResponse) {
-//       switch(request.action) {
-//          case 'getName':
-//             sendResponse(getNameFromStorage());
-//             break;
-//       }
-//    }
-// );
+function getNameFromStorage() {
+    return getItem('name');
+}
 
-// function getNameFromStorage() {
-//     return getItem('name');
-// }
+function getItem(key) { return getStorage().getItem(key); }
+function setItem(key, map) { return getStorage().setItem(key, map); }
+function removeItem(key) { return getStorage().removeItem(key); }
+function getStorage() { return window.localStorage; }
 
-// function getItem(key) { return getStorage().getItem(key); }
-// function setItem(key, map) { return getStorage().setItem(key, map); }
-// function removeItem(key) { return getStorage().removeItem(key); }
-// function getStorage() { return window.localStorage; }
-// </script>
-		
-
-		<script src="myscript.js"></script>
-
+ -->
 	</body>
 </html>

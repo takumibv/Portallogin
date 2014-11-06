@@ -5,12 +5,13 @@
 		"version": "0.1",
 		"manifest_version": 2,
 
-		"description": "Popup.htmlに今週の時間割を表示",
+		"description": "今週の時間割を表示",
 
 		"options_page":"options.html",
 
 		"background":{
 			"scripts":["background.js"]
+			//"persistent": false
 		},
 		
 		"icons":{ "48":"ex5.png" },
@@ -34,7 +35,7 @@
 
 		 "browser_action":{
 		 	"default_icon":"ex8.png",
-			"default_title":"Portal Login Extention",
-		    "default_popup":"popup.html"
+			"default_title":"Portal Login Extention"
+			//,"default_popup":"popup.html"
 		}
 }

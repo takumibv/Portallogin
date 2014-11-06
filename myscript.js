@@ -1,23 +1,5 @@
-alert("OK.1");
+
 //console.log(pass);
-  if(location.href=="https://portal.nap.gsic.titech.ac.jp/GetAccess/Login?Template=userpass_key"){
-   
-    document.getElementsByTagName("select")[0].value="UserPassword";
-    document.getElementsByName("OK")[0].click();
-    alert("OK.2");
-  
- }
-
-
-
- if(location.href.indexOf("https://portal.nap.gsic.titech.ac.jp/GetAccess/Login")!=-1){
-  alert("OK.3");
-// window.onload=function(){
-    document.getElementsByName("usr_name")[0].value=account[0];
-    document.getElementsByName("usr_password")[0].value=account[1];
-    //document.getElementsByName("OK")[0].click();
-    alert("OK.4");
- }
 
 var a = document.getElementsByTagName("th");
   // console.log(a[6].innerHTML);
